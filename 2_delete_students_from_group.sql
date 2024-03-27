@@ -1,0 +1,7 @@
+DELETE 
+FROM [dbo].[STUDENTS]
+WHERE STUDENTS.[GROUP_ID] IN (
+    SELECT gr.[GROUP_ID]
+    FROM [dbo].[GROUPS] gr
+    WHERE gr.[NAME] = 'SR-01'
+)

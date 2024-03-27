@@ -1,0 +1,2 @@
+SELECT st.[FIRST_NAME], st.[LAST_NAME], cr.[NAME], cr.[DESCRIPTION]
+FROM [dbo].[STUDENTS] st  INNER JOIN [dbo].[GROUPS] gr ON gr.[GROUP_ID] = st.[GROUP_ID] INNER JOIN [dbo].[COURSES] cr ON gr.[COURSE_ID] = cr.[COURSE_ID]
