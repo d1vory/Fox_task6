@@ -1,4 +1,4 @@
-INSERT INTO dbo.COURSES (
+INSERT INTO [students].[dbo].[COURSES] (
     [Name],
     [DESCRIPTION]
 )
@@ -53,9 +53,9 @@ VALUES
     ('Introduction to Macroeconomics', 'Examine the principles of macroeconomics, including national income determination, economic growth, and monetary policy.'),
     ('Introduction to Human Resource Management', 'Learn about the functions and responsibilities of human resource management in organizations.'),
     ('Introduction to Biochemistry', 'Explore ')
-GO;
+GO
 
-INSERT INTO dbo.GROUPS(
+INSERT INTO [students].[dbo].[GROUPS](
     [NAME],
     [COURSE_ID]
 )
@@ -72,7 +72,69 @@ VALUES
     ('Web Development Essentials', 12),
     ('Marketing Strategies', 4),
     ('Language and Linguistics Basics', 20)
-GO;
+GO
 
+INSERT INTO [students].[dbo].[STUDENTS](
+    [GROUP_ID],
+    [FIRST_NAME],
+    [LAST_NAME]
+)
 
+VALUES
+    (1, 'John', 'Doe'),
+    (1, 'Alice', 'Smith'),
+    (1, 'Michael', 'Johnson'),
+    (2, 'Emily', 'Brown'),
+    (2, 'Daniel', 'Wilson'),
+    (3, 'Jessica', 'Martinez'),
+    (3, 'Matthew', 'Taylor'),
+    (4, 'Sophia', 'Anderson'),
+    (4, 'William', 'Thomas'),
+    (5, 'Olivia', 'Hernandez'),
+    (5, 'Ethan', 'Moore'),
+    (6, 'Ava', 'Martin'),
+    (6, 'James', 'Jackson'),
+    (7, 'Isabella', 'White'),
+    (7, 'Alexander', 'Harris'),
+    (8, 'Mia', 'Clark'),
+    (8, 'David', 'Lewis'),
+    (9, 'Charlotte', 'Robinson'),
+    (9, 'Noah', 'Walker'),
+    (10, 'Amelia', 'Perez'),
+    (11, 'Liam', 'Sanchez'),
+    (1, 'Emma', 'Gonzalez'),
+    (2, 'Benjamin', 'Lopez'),
+    (3, 'Harper', 'Lee'),
+    (4, 'Henry', 'Wright'),
+    (5, 'Ella', 'King'),
+    (6, 'Jacob', 'Green'),
+    (7, 'Abigail', 'Baker'),
+    (8, 'Evelyn', 'Young'),
+    (9, 'Michael', 'Turner'),
+    (10, 'Sophie', 'Hill'),
+    (11, 'Logan', 'Adams'),
+    (1, 'Avery', 'Nelson'),
+    (2, 'Evelyn', 'Campbell'),
+    (3, 'Jackson', 'Mitchell'),
+    (4, 'Lily', 'Roberts'),
+    (5, 'Ella', 'Carter'),
+    (6, 'Jack', 'Phillips'),
+    (7, 'Avery', 'Russell'),
+    (8, 'Mason', 'Griffin'),
+    (9, 'Ella', 'Stewart'),
+    (10, 'Sebastian', 'Reed'),
+    (11, 'Scarlett', 'Morales'),
+    (1, 'Grayson', 'Cook'),
+    (2, 'Sofia', 'Rivera'),
+    (3, 'Lincoln', 'Long'),
+    (4, 'Addison', 'Price'),
+    (5, 'Henry', 'Perry'),
+    (6, 'Eleanor', 'Powell'),
+    (7, 'Lucas', 'Young'),
+    (8, 'Oliver', 'Scott'),
+    (9, 'Nora', 'Adams'),
+    (10, 'Eli', 'Bennett'),
+    (11, 'Aria', 'Flores')
+
+GO
     
